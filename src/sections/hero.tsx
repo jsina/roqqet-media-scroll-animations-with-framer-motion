@@ -70,7 +70,7 @@ export const Hero = () => {
           reimagined.
         </h1>
 
-        <a href="#" className="flex items-center text-lg text-primary">
+        <a href="#" className="flex items-center text-lg text-secondary">
           <Image
             width={32}
             height={32}
