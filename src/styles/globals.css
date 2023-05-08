@@ -4,8 +4,8 @@
 
 @layer base {
   :root {
-    --color-primary: #dcff50;
-    --color-secondary: #7b61ff;
+    --color-primary: #5ee7ff;
+    --color-secondary: #8b6eff;
     --color-heading: #f5f5f7;
     --color-text: rgba(255, 255, 255, 0.6);
     --color-background: #090909;
@@ -13,7 +13,6 @@
     font-size: 62.5%;
   }
 }
-
 
 @layer utilities {
   /* This two helpers apply a -50% to the translate x/y, and add

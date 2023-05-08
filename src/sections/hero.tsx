@@ -1,6 +1,6 @@
-import { GithubIcon } from "@/icons/github";
-import { useScroll, useTransform, motion } from "framer-motion";
 import { useEffect, useRef } from "react";
+import { useScroll, useTransform, motion } from "framer-motion";
+import Image from "next/image";
 
 export const Hero = () => {
   const targetRef = useRef<HTMLDivElement | null>(null);
@@ -10,9 +10,10 @@ export const Hero = () => {
   });
   const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0]);
   const scale = useTransform(scrollYProgress, [0, 0.5], [1, 0.8]);
-  const position = useTransform(scrollYProgress, (pos) =>
-    pos >= 1 ? "relative" : "fixed"
-  );
+  const position = useTransform(scrollYProgress, (pos) => {
+    console.log({ pos });
+    return pos >= 1 ? "relative" : "fixed";
+  });
 
   useEffect(() => {
     const updateMousePosition = (ev: MouseEvent) => {
@@ -49,17 +50,17 @@ export const Hero = () => {
             target="_blank"
             rel="noopener nofollow noreferrer"
           >
-            CodeSandbox
+            RM Devs
           </a>
           ,
           <br />
-          rebuilt by{" "}
+          redesign by{" "}
           <a
             href="https://www.frontend.fyi"
             target="_blank"
             rel="noopener nofollow noreferrer"
           >
-            Frontend.FYI
+            RoqqetMedia
           </a>
         </p>
 
@@ -70,8 +71,14 @@ export const Hero = () => {
         </h1>
 
         <a href="#" className="flex items-center text-lg text-primary">
-          <GithubIcon className="mr-2 inline h-5 w-5" />
-          Import GitHub project
+          <Image
+            width={32}
+            height={32}
+            alt="rm"
+            src="/rm.png"
+            className="mr-2 inline"
+          />
+          Order Your project
         </a>
       </motion.div>
     </motion.section>
