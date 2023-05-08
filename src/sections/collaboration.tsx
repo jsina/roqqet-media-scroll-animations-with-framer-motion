@@ -74,27 +74,27 @@ export const Collaboration = () => {
             <motion.div style={{ scale, x, y }} className="origin-top">
               <motion.img
                 style={{ opacity }}
-                src="/main-screen.svg"
+                src="/swaymarkets.svg"
                 className="h-auto max-h-none w-[70vw]"
               />
               <motion.div
                 style={{ opacity: avatarGroupOpacity, x: avatarGroupX }}
-                className="absolute right-[10%] top-[1.5%] flex gap-2"
+                className="absolute right-[10%] top-[5.5%] flex gap-2"
               >
                 <motion.img
                   style={{ scale: avatarOneScale }}
-                  className="h-[1.5vw] w-[1.5vw] rounded-full border border-[#4ca] object-cover"
-                  src="https://unsplash.com/photos/_H6wpor9mjs/download?force=true&w=128&h=128"
+                  className="h-[1.5vw] w-[1.5vw] rounded-full border border-[#5EE7FF] object-cover"
+                  src="/sina.jpeg"
                 />
                 <motion.img
                   style={{ scale: avatarTwoScale, opacity: avatarTwoOpacity }}
-                  className="h-[1.5vw] w-[1.5vw] rounded-full border border-[#c82] object-cover"
-                  src="https://unsplash.com/photos/sibVwORYqs0/download?force=true&w=128&h=128"
+                  className="h-[1.5vw] w-[1.5vw] rounded-full border border-[#8B6EFF] object-cover"
+                  src="matt.jpeg"
                 />
                 <motion.img
                   style={{ scale: avatarThreeScale }}
-                  className="h-[1.5vw] w-[1.5vw] rounded-full border border-[#f0f] object-cover"
-                  src="https://unsplash.com/photos/7YVZYZeITc8/download?force=true&w=128&h=128"
+                  className="h-[1.5vw] w-[1.5vw] rounded-full border border-[#FD80F2] object-cover"
+                  src="ali.jpeg"
                 />
               </motion.div>
             </motion.div>
