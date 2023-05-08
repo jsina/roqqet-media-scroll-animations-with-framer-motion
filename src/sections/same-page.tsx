@@ -162,17 +162,17 @@ export const SamePage = () => {
               "--scale": scale,
             })}
           >
-            <img src="/main-screen.svg" className="h-auto w-full" />
+            <img src="/swaymarkets.svg" className="h-auto w-full" />
             <motion.img
               style={{ opacity: avatarOpacity }}
               className="absolute left-[13%] top-1/2 h-[1.5vw] w-[1.5vw] translate-y-1/2 rounded-full border border-[#c82] object-cover will-change-transform"
-              src="https://unsplash.com/photos/sibVwORYqs0/download?force=true&w=128&h=128"
+              src="/matt.jpeg"
             />
             <motion.span
               className="mt-3 block text-2xl text-white"
               style={{ opacity: newBranchOpacity }}
             >
-              <BranchIcon className="mr-3 inline-block h-12 w-12" /> Feature
+              <BranchIcon className="mr-3 inline-block h-12 w-12" /> Final
               branch
             </motion.span>
           </motion.div>
@@ -184,12 +184,12 @@ export const SamePage = () => {
               "--scale": loadingScreenscale,
             })}
           >
-            <img src="/loading-screen.svg" className="h-auto w-full" />
+            <img src="/swaymarkets-loading.svg" className="h-auto w-full" />
             <motion.div
               style={{ opacity: newBranchOpacity }}
               className="absolute inset-0"
             >
-              <img src="/main-screen.svg" className="h-auto w-full" />
+              <img src="/swaymarkets.svg" className="h-auto w-full" />
             </motion.div>
             <motion.span
               className="mt-3 block text-2xl text-white"
@@ -209,7 +209,7 @@ export const SamePage = () => {
           >
             <span className="text-primary">Built for flow</span>
             <br />
-            Spin up a new branch for any sized project in seconds.
+            Spin up a new project for any sized project.
           </motion.p>
         </div>
         <motion.p
@@ -220,9 +220,9 @@ export const SamePage = () => {
           })}
           className="translate-y-centered-offset top-1/2 left-[20px] w-[300px] pl-16 text-2xl leading-tight text-white"
         >
-          Not only share code,
+          Not only share our experience,
           <br />
-          <span className="text-primary">share the context.</span>
+          <span className="text-primary">share the way.</span>
         </motion.p>
         <motion.p
           style={stylesWithCssVar({
@@ -232,7 +232,7 @@ export const SamePage = () => {
           })}
           className="translate-y-centered-offset top-1/2 right-[20px] w-[300px] pr-16 text-xl leading-tight text-white"
         >
-          Sometimes it's not about code.
+          Sometimes it's not about success.
           <br />
           <span className="text-primary">
             Get everybody on the same page. Literally.
