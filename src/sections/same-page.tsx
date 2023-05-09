@@ -162,10 +162,10 @@ export const SamePage = () => {
               "--scale": scale,
             })}
           >
-            <img src="/swaymarkets.svg" className="h-auto w-full" />
+            <img src="/feature-final.svg" className="h-auto w-full" />
             <motion.img
               style={{ opacity: avatarOpacity }}
-              className="absolute left-[13%] top-1/2 h-[1.5vw] w-[1.5vw] translate-y-1/2 rounded-full border border-[#c82] object-cover will-change-transform"
+              className="absolute left-[13%] top-1/2 h-[1.5vw] w-[1.5vw] translate-y-1/2 rounded-full border border-secondary object-cover will-change-transform"
               src="/matt.jpeg"
             />
             <motion.span
@@ -189,7 +189,7 @@ export const SamePage = () => {
               style={{ opacity: newBranchOpacity }}
               className="absolute inset-0"
             >
-              <img src="/swaymarkets.svg" className="h-auto w-full" />
+              <img src="/feature-final.svg" className="h-auto w-full" />
             </motion.div>
             <motion.span
               className="mt-3 block text-2xl text-white"
