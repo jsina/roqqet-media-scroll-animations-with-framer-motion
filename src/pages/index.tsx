@@ -23,10 +23,10 @@ export default function Home() {
         <div className="relative z-10 w-full overflow-x-clip">
           <Collaboration />
           <SamePage />
-          {/* <StreamlinedExperience />
+          <StreamlinedExperience />
           <Features />
           <MoreFeatures />
-          <NoLockin /> */}
+          <NoLockin />
         </div>
         <div className="fixed inset-0 z-10 flex items-center justify-center bg-black bg-[radial-gradient(circle_farthest-side_at_calc(300px)_calc(300px),_var(--color-secondary)_0%,_transparent_100%)] md:hidden">
           {/* This is a very ugly way of adding such a message, don't build it like this :) */}
