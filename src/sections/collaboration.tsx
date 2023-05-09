@@ -32,26 +32,26 @@ export const Collaboration = () => {
 
   const avatarGroupOpacity = useTransform(
     scrollYProgress,
-    [0, 0.23, 0.25],
+    [0, 0.11, 0.15],
     [0, 0, 1]
   );
 
   const avatarGroupX = useTransform(
     scrollYProgress,
-    [0, 0.23, 0.25, 0.4, 0.45, 0.6, 0.65],
+    [0, 0.12, 0.24, 0.32, 0.48, 0.6, 0.72],
     ["60px", "60px", "40px", "40px", "20px", "20px", "0px"]
   );
 
   const avatarOneScale = useTransform(
     scrollYProgress,
-    [0, 0.23, 0.25, 0.85, 0.9],
+    [0, 0.1, 0.12, 0.85, 0.9],
     [0, 0, 1, 1, 0]
   );
 
   const avatarTwoScale = useTransform(
     scrollYProgress,
-    [0, 0.4, 0.45],
-    [0, 0, 1]
+    [0, 0.2, 0.24, 0.85, 0.9],
+    [0, 0, 1, 1, 0]
   );
 
   const avatarTwoOpacity = useTransform(
@@ -62,8 +62,26 @@ export const Collaboration = () => {
 
   const avatarThreeScale = useTransform(
     scrollYProgress,
-    [0, 0.6, 0.65, 0.85, 0.9],
+    [0, 0.3, 0.32, 0.85, 0.9],
     [0, 0, 1, 1, 0]
+  );
+
+  const avatarFourScale = useTransform(
+    scrollYProgress,
+    [0, 0.4, 0.48, 0.85, 0.9],
+    [0, 0, 1, 1, 0]
+  );
+
+  const avatarFiveScale = useTransform(
+    scrollYProgress,
+    [0, 0.55, 0.6, 0.85, 0.9],
+    [0, 0, 1, 1, 0]
+  );
+
+  const avatarSixScale = useTransform(
+    scrollYProgress,
+    [0, 0.7, 0.72],
+    [0, 0, 1]
   );
 
   return (
@@ -74,7 +92,7 @@ export const Collaboration = () => {
             <motion.div style={{ scale, x, y }} className="origin-top">
               <motion.img
                 style={{ opacity }}
-                src="/feature-final.svg"
+                src="/Section_ Header.svg"
                 className="h-auto max-h-none w-[70vw]"
               />
               <motion.div
@@ -83,18 +101,33 @@ export const Collaboration = () => {
               >
                 <motion.img
                   style={{ scale: avatarOneScale }}
-                  className="h-[1.5vw] w-[1.5vw] rounded-full border border-[#5EE7FF] object-cover"
-                  src="/sina.jpeg"
+                  className="h-[1.5vw] w-[1.5vw] rounded-full border border-[#CEF144] object-cover"
+                  src="/alireza.jpeg"
                 />
                 <motion.img
-                  style={{ scale: avatarTwoScale, opacity: avatarTwoOpacity }}
-                  className="h-[1.5vw] w-[1.5vw] rounded-full border border-[#8B6EFF] object-cover"
-                  src="matt.jpeg"
+                  style={{ scale: avatarTwoScale }}
+                  className="h-[1.5vw] w-[1.5vw] rounded-full border border-[#5EE7FF] object-cover"
+                  src="farshad.jpeg"
                 />
                 <motion.img
                   style={{ scale: avatarThreeScale }}
                   className="h-[1.5vw] w-[1.5vw] rounded-full border border-[#FD80F2] object-cover"
                   src="ali.jpeg"
+                />
+                <motion.img
+                  style={{ scale: avatarFourScale }}
+                  className="h-[1.5vw] w-[1.5vw] rounded-full border border-[#171833] object-cover"
+                  src="/sina.jpeg"
+                />
+                <motion.img
+                  style={{ scale: avatarFiveScale }}
+                  className="h-[1.5vw] w-[1.5vw] rounded-full border border-[#DB00FF] object-cover"
+                  src="fiach.jpeg"
+                />
+                <motion.img
+                  style={{ scale: avatarSixScale, opacity: avatarTwoOpacity }}
+                  className="h-[1.5vw] w-[1.5vw] rounded-full border border-[#8B6EFF] object-cover"
+                  src="matt.jpeg"
                 />
               </motion.div>
             </motion.div>
