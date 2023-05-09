@@ -38,8 +38,8 @@ export const Collaboration = () => {
 
   const avatarGroupX = useTransform(
     scrollYProgress,
-    [0, 0.12, 0.24, 0.32, 0.48, 0.6, 0.72],
-    ["60px", "60px", "40px", "40px", "20px", "20px", "0px"]
+    [0, 0.12, 0.24, 0.32, 0.48, 0.6, 0.72, 0.8],
+    ["60px", "60px", "40px", "40px", "20px", "20px", "20px", "0px"]
   );
 
   const avatarOneScale = useTransform(
